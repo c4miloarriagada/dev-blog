@@ -7,10 +7,9 @@ type Props = {
 
 export const SideBarLinks = ({ active, options }: Props) => {
 
-    console.log(active)
 
   return (
-    <ul className="pl-6">
+    <ul className={`pl-6 ${active && 'hidden'}`}>
       {options.map((options, index) => (
         <li key={index}>{options}</li>
       ))}
