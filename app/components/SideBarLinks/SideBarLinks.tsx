@@ -4,11 +4,11 @@ import React, { HTMLProps, useState } from 'react'
 
 type Option = {
   id:string
-  label: string
+  props: string
 }
 
 type Props = {
-  options: React.ReactNode[] & HTMLProps<HTMLAnchorElement>
+  options:  Array<React.ReactNode & { props?: string }>
   active: boolean
   activeLink: {[id: string] : boolean}
   handleClick: (event: React.MouseEvent<HTMLLIElement>) => void;
