@@ -11,11 +11,11 @@ export const listOfTopics: Topic[] = [
   {
     topic: 'Topic 1',
     options: [
-      <Link id="0" className="w-full flex justify-between" key={1} href={'/about'}>
+      <Link id="0" data-action='anchor' className="w-full flex justify-between" key={1} href={'/about'}>
         Link 1 
         <BsLink45Deg />
       </Link>,
-      <Link id="1" className="w-full flex justify-between"  key={2} href={'/'}>
+      <Link id="1" data-action='anchor' className="w-full flex justify-between"  key={2} href={'/'}>
         Link 2
         <BsLink45Deg />
       </Link>
@@ -24,11 +24,11 @@ export const listOfTopics: Topic[] = [
   {
     topic: 'Topic 2',
     options: [
-      <Link  id="3" className="w-full flex justify-between"  key={1} href={'/'}>
+      <Link  id="3" data-action='anchor' className="w-full flex justify-between"  key={1} href={'/'}>
         Link 1
          <BsLink45Deg />
       </Link>,
-      <Link id="4" className="w-full flex justify-between"  key={2} href={'/'}>
+      <Link id="4" data-action='anchor' className="w-full flex justify-between"  key={2} href={'/'}>
         Link 2
          <BsLink45Deg />
       </Link>
@@ -37,11 +37,11 @@ export const listOfTopics: Topic[] = [
   {
     topic: 'Topic 3',
     options: [
-      <Link id="5" className="w-full flex justify-between" key={1} href={'/'}>
+      <Link id="5" data-action='anchor' className="w-full flex justify-between" key={1} href={'/'}>
         Link 1
          <BsLink45Deg />
       </Link>,
-      <Link  id="6" className="w-full flex justify-between" key={2} href={'/'}>
+      <Link  id="6"  data-action='anchor' className="w-full flex justify-between" key={2} href={'/'}>
         Link 2
          <BsLink45Deg />
       </Link>
@@ -50,11 +50,11 @@ export const listOfTopics: Topic[] = [
   {
     topic: 'Topic 4',
     options: [
-      <Link id="7" className="w-full flex justify-between"  key={1} href={'/'}>
+      <Link id="7" data-action='anchor' className="w-full flex justify-between"  key={1} href={'/'}>
         Link 1
          <BsLink45Deg />
       </Link>,
-      <Link id="8" className="w-full flex justify-between" key={2} href={'/'}>
+      <Link id="8" data-action='anchor' className="w-full flex justify-between" key={2} href={'/'}>
         Link 2
          <BsLink45Deg />
       </Link>
@@ -63,13 +63,13 @@ export const listOfTopics: Topic[] = [
   {
     topic: 'Topic 5',
     options: [
-      <Link id="9" className="w-full flex justify-between"  key={1} href={'/'}>
+      <Link id="9" data-action='anchor' className="w-full flex justify-between"  key={1} href={'/'}>
         
         Link 1
 
          <BsLink45Deg />
       </Link>,
-      <Link id="10" className="w-full flex justify-between"  key={2} href={'/'}>
+      <Link id="10" data-action='anchor' className="w-full flex justify-between"  key={2} href={'/'}>
         Link 2
          <BsLink45Deg />
       </Link>

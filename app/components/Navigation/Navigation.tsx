@@ -14,8 +14,8 @@ const routes = [
 
 export const Navigation = (): JSX.Element => {
   return (
-    <header>
-      <nav className="list-none text-lg  flex justify-between px-5 items-center h-20 shadow-md">
+    <header className='sticky top-0 backdrop-blur-md z-20'>
+      <nav className="list-none text-lg flex justify-between px-5 items-center h-20 shadow-md">
         <div>
             <ul >
                 {routes.map(({route, label})=>(

@@ -1,23 +1,18 @@
-'use client'
-import { LinkProps } from 'next/link'
-import React, { HTMLProps, useState } from 'react'
-
-type Option = {
-  id:string
-  props: string
-}
+import React from 'react'
 
 type Props = {
-  options:  Array<React.ReactNode & { props?: string }>
+  options: Array<React.ReactNode & { props?: string }>
   active: boolean
-  activeLink: {[id: string] : boolean}
-  handleClick: (event: React.MouseEvent<HTMLLIElement>) => void;
+  activeLink: { [id: string]: boolean }
+  handleClick: (event: React.MouseEvent<HTMLLIElement>) => void
 }
 
-
-export const SideBarLinks = ({ active, options, handleClick, activeLink }: Props) => {
-
-
+export const SideBarLinks = ({
+  active,
+  options,
+  handleClick,
+  activeLink
+}: Props) => {
   return (
     <ul
       className={`pb-1 font-semibold ${
@@ -33,9 +28,12 @@ export const SideBarLinks = ({ active, options, handleClick, activeLink }: Props
           key={index}
         >
           <p
-            className={`flex justify-between pl-2 rounded-md hover:bg-slate-200 hover:text-sky-500 ${options && activeLink[options.props.id] && 'bg-slate-200'}`}
-            >
-          
+            className={`flex justify-between pl-2  rounded-md hover:bg-slate-200 hover:text-sky-500 ${
+              options &&
+              activeLink[options.props.id] &&
+              'bg-slate-200 text-slate-500'
+            }`}
+          >
             {options}
           </p>
         </li>

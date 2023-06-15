@@ -1,9 +1,11 @@
-
+import { PagesContainer } from "./components/PagesContainer/PagesContainer"
 
 export default function Home() {
   return (
-   <>
-      <main className='col-span-9'>Content</main>
+   <>   
+      <PagesContainer>
+        <h1> HOME </h1>
+      </PagesContainer>
   </>
   )
 }
